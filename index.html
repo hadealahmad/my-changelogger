@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelogger</title>
+  <link id="favicon-link" rel="icon" type="image/png" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/lib/marked.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <img id="site-logo" class="site-logo" alt="Logo" hidden>
+      <div>
+        <h1 id="site-title">Changelogger</h1>
+        <p id="site-about" class="site-about"></p>
+      </div>
+    </div>
+    <div class="header-right">
+      <div id="custom-buttons" class="custom-buttons"></div>
+      <button id="theme-toggle" class="icon-btn" title="Toggle theme" hidden>
+        <i data-lucide="sun" class="icon-light"></i>
+        <i data-lucide="moon" class="icon-dark"></i>
+      </button>
+      <button id="locale-toggle" class="icon-btn" title="Toggle language" hidden>
+        <i data-lucide="languages"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="filter-bar">
+      <div class="search-wrapper">
+        <i data-lucide="search" class="search-icon"></i>
+        <input id="search-input" type="text" class="search-input" placeholder="Search projects...">
+      </div>
+      <div class="filter-row">
+        <div id="tag-filters" class="tag-filters"></div>
+        <select id="category-filter" class="category-select">
+          <option value="">All Categories</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="project-grid" class="project-grid"></div>
+
+    <div id="changelog-panel" class="changelog-panel" hidden></div>
+  </main>
+
+  <footer id="site-footer" class="site-footer" hidden></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
