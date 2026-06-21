@@ -1,5 +1,5 @@
 ---
-title: "Hadi Productions Changlogger"
+title: "Hadi Productions Changelog"
 about: "Track updates across all my projects in one place"
 mode: supporter
 theme: dark
