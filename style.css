@@ -173,6 +173,10 @@ a:hover {
   transition: background-color 0.15s;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .icon-btn:hover {
   background-color: var(--accent);
 }
